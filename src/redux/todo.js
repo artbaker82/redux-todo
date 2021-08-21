@@ -22,8 +22,8 @@ export const ToDo = (state = initialState, action) => {
       return { ...state, todo: state.todo.filter((task) => !task.complete) };
     case ActionTypes.DELETE_TASKS:
       // TASK implement the final action type
-      let deletedTodo = [...state.todo];
-      deletedTodo = [];
+      //let deletedTodo = [...state.todo];
+      let deletedTodo = [];
       return { ...state, todo: deletedTodo };
     case ActionTypes.DELETE_SINGLE_TASK:
       let taskToRemove = state.todo[action.payload];
