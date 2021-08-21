@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding-right: 30px;
+}
+
+ol > li {
+  text-align: left;
+}
+
+ul > li {
+  border-bottom: 2px solid #282c34;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: 3px solid blue;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+}
+
+button.delete {
+  border: 3px solid red;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+  color: red;
+}
+
+input[type="text"] {
+  width: 50%;
+}
+
+.AddField {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin: 0px 10px;
+}
