@@ -29,8 +29,15 @@ export const ToDo = (state = initialState, action) => {
       let taskToRemove = state.todo[action.payload];
       //console.log(newList[action.payload]);
       console.log(taskToRemove);
+      //console.log(action.payload);
+      const newList = state.todo.filter((todo) => todo !== taskToRemove);
 
-      return { ...state, todo: state.todo.filter((todo) => todo !== taskToRemove) };
+      //using slice
+      // let start = state.todo.slice(0, action.payload);
+      // let end = state.todo.slice(action.payload + 1, state.todo.length);
+      // let combined = start.concat(end);
+
+      return { ...state, todo: newList };
     default:
       return state;
   }
